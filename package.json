@@ -1,0 +1,38 @@
+{
+  "name": "action-write-config",
+  "version": "0.0.1",
+  "description": "A GitHub Action to write config to file",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antfu/action-write-config.git"
+  },
+  "keywords": [
+    "github-actions"
+  ],
+  "author": "Anthony Fu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antfu/action-write-config/issues"
+  },
+  "homepage": "https://github.com/antfu/action-write-config#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/io": "^1.0.2",
+    "js-yaml": "^3.14.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config-ts": "^0.3.3",
+    "@types/js-yaml": "^3.12.5",
+    "@types/node": "^13.13.25",
+    "eslint": "^7.11.0",
+    "tsup": "^3.7.0",
+    "typescript": "^4.0.3"
+  },
+  "eslintConfig": {
+    "extends": "@antfu/eslint-config-ts"
+  }
+}

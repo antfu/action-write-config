@@ -1,0 +1,24 @@
+name: "Write Config"
+author: "Anthony Fu"
+description: "Write config to a file"
+
+inputs:
+  path:
+    description: "The path to the file to write"
+    required: true
+
+  data:
+    description: "The contents of the file"
+    required: true
+
+  format:
+    description: "File format, can be `json` or `yaml`"
+    default: "auto"
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
+
+branding:
+  icon: "package"
+  color: "gray-dark"
