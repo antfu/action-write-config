@@ -2,7 +2,7 @@
   "name": "action-write-config",
   "version": "0.0.1",
   "description": "A GitHub Action to write config to file",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsup src/index.ts --format cjs"
   },
